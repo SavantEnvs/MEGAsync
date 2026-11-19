@@ -1,0 +1,4 @@
+#exclude-larger:2G
+-p:sub/dir/*
+bogus line
+-dp:a:b:c

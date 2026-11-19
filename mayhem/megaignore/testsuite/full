@@ -1,0 +1,12 @@
++sync:.megaignore
+-:.*
+#-:commented_rule
+-f:*.tmp
+-d:node_modules
+-nr:.*\.bak$
+-fg:thumbs?.db
++N:keep*
+exclude-larger:100M
+exclude-smaller:10k
+-s:*
+-:my_own_rule

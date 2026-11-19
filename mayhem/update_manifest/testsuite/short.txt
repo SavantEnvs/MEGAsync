@@ -1,0 +1,5 @@
+5
+AAAA
+http://x
+Contents/MacOS/MEGAsync
+AAAA

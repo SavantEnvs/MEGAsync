@@ -1,0 +1,9 @@
+project: savantenvs/MEGAsync
+target: update_manifest
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_update_manifest
+    libfuzzer: true
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/update_manifest/testsuite

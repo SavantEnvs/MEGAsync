@@ -1,0 +1,11 @@
+project: savantenvs/MEGAsync
+target: megaignore
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_megaignore
+    libfuzzer: true
+    timeout: 10
+    env:
+      QT_QPA_PLATFORM: offscreen
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/megaignore/testsuite
